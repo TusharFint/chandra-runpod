@@ -1,0 +1,5 @@
+runpod
+chandra-ocr[hf]>=0.2.0
+bitsandbytes>=0.45.0
+pypdfium2>=4.30.0
+accelerate>=1.11.0

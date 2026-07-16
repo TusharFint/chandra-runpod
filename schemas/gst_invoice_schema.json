@@ -1,0 +1,102 @@
+{
+  "type": "object",
+  "properties": {
+    "invoice_number": {"type": "string", "description": "Invoice number or ID"},
+    "invoice_date": {"type": "string", "description": "Invoice date in DD/MM/YYYY format"},
+    "invoice_value": {"type": "number", "description": "Total invoice value including tax"},
+    "place_of_supply": {"type": "string", "description": "Place of supply / state name"},
+    "place_of_delivery": {"type": "string", "description": "Place of delivery / destination state"},
+    "order_number": {"type": "string", "description": "Purchase order or order number"},
+    "order_date": {"type": "string", "description": "Order date in DD/MM/YYYY format"},
+    "amount_in_words": {"type": "string", "description": "Total amount in words"},
+    "mode_of_payment": {"type": "string", "description": "Payment mode (e.g., Credit, Bank Transfer)"},
+    "seller": {
+      "type": "object",
+      "properties": {
+        "name": {"type": "string", "description": "Seller company name"},
+        "gstin": {"type": "string", "description": "Seller 15-char GSTIN"},
+        "pan": {"type": "string", "description": "Seller PAN (10 chars)"},
+        "address": {"type": "string", "description": "Seller full registered address"},
+        "state": {"type": "string", "description": "Seller state"},
+        "pincode": {"type": "string", "description": "Seller pincode (6 digits)"},
+        "country": {"type": "string", "description": "Seller country"},
+        "phone": {"type": "string", "description": "Seller phone number"},
+        "email": {"type": "string", "description": "Seller email"}
+      },
+      "required": ["name"]
+    },
+    "buyer": {
+      "type": "object",
+      "properties": {
+        "name": {"type": "string", "description": "Buyer company name"},
+        "gstin": {"type": "string", "description": "Buyer 15-char GSTIN"},
+        "pan": {"type": "string", "description": "Buyer PAN (10 chars)"},
+        "address": {"type": "string", "description": "Buyer billing address"},
+        "state": {"type": "string", "description": "Buyer state"},
+        "state_code": {"type": "string", "description": "Buyer state code (2 digits)"},
+        "pincode": {"type": "string", "description": "Buyer pincode (6 digits)"},
+        "country": {"type": "string", "description": "Buyer country"},
+        "billing_address": {"type": "string", "description": "Buyer billing address if different from address"},
+        "shipping_address": {"type": "string", "description": "Buyer shipping/delivery address"},
+        "phone": {"type": "string", "description": "Buyer phone number"},
+        "email": {"type": "string", "description": "Buyer email"}
+      },
+      "required": ["name"]
+    },
+    "line_items": {
+      "type": "array",
+      "description": "All line items from all pages",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sr_no": {"type": "integer", "description": "Serial number"},
+          "description": {"type": "string", "description": "Item description"},
+          "hsn_code": {"type": "string", "description": "HSN/SAC code, digits only"},
+          "quantity": {"type": "number", "description": "Quantity"},
+          "unit": {"type": "string", "description": "Unit (NOS, KG, PCS)"},
+          "rate": {"type": "number", "description": "Unit price in INR"},
+          "discount": {"type": "number", "description": "Discount amount (0 if none)"},
+          "taxable_value": {"type": "number", "description": "Taxable value, extract directly never calculate"},
+          "cgst_rate": {"type": "number", "description": "CGST rate %"},
+          "cgst_amount": {"type": "number", "description": "CGST amount"},
+          "sgst_rate": {"type": "number", "description": "SGST rate %"},
+          "sgst_amount": {"type": "number", "description": "SGST amount"},
+          "igst_rate": {"type": "number", "description": "IGST rate %"},
+          "igst_amount": {"type": "number", "description": "IGST amount"},
+          "total_amount": {"type": "number", "description": "Total = taxable + tax"}
+        },
+        "required": ["sr_no", "description", "quantity", "rate", "taxable_value"]
+      }
+    },
+    "tax_summary": {
+      "type": "object",
+      "properties": {
+        "total_taxable_value": {"type": "number", "description": "Total taxable value"},
+        "cgst": {"type": "array", "items": {"type": "object", "properties": {"rate": {"type": "number"}, "amount": {"type": "number"}}}},
+        "sgst": {"type": "array", "items": {"type": "object", "properties": {"rate": {"type": "number"}, "amount": {"type": "number"}}}},
+        "igst": {"type": "array", "items": {"type": "object", "properties": {"rate": {"type": "number"}, "amount": {"type": "number"}}}}
+      }
+    },
+    "totals": {
+      "type": "object",
+      "properties": {
+        "total_before_tax": {"type": "number", "description": "Total before tax"},
+        "total_tax_amount": {"type": "number", "description": "Total tax"},
+        "round_off": {"type": "number", "description": "Round-off adjustment"},
+        "grand_total": {"type": "number", "description": "Final grand total"}
+      },
+      "required": ["grand_total"]
+    },
+    "bank_details": {
+      "type": "object",
+      "properties": {
+        "bank_name": {"type": "string", "description": "Bank name"},
+        "account_number": {"type": "string", "description": "Account number"},
+        "ifsc_code": {"type": "string", "description": "IFSC code"},
+        "branch": {"type": "string", "description": "Branch name"},
+        "account_name": {"type": "string", "description": "Account holder name"}
+      }
+    }
+  },
+  "required": ["invoice_number", "invoice_date", "seller", "buyer", "line_items", "totals"]
+}

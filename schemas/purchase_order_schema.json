@@ -1,0 +1,109 @@
+{
+  "type": "object",
+  "description": "Indian GST purchase order",
+  "properties": {
+    "purchaseorder_number": {
+      "type": "string",
+      "description": "PO number"
+    },
+    "order_number": {
+      "type": "string",
+      "description": "Order number"
+    },
+    "order_date": {
+      "type": "string",
+      "description": "Order date DD/MM/YYYY"
+    },
+    "delivery_date": {
+      "type": "string",
+      "description": "Delivery date DD/MM/YYYY"
+    },
+    "place_of_supply": {
+      "type": "string",
+      "description": "Place of supply state"
+    },
+    "place_of_delivery": {
+      "type": "string",
+      "description": "Place of delivery state"
+    },
+    "shipping_address": {
+      "type": "string",
+      "description": "Shipping address"
+    },
+    "mode_of_payment": {
+      "type": "string",
+      "description": "Payment terms"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Special instructions"
+    },
+    "buyer": {
+      "type": "object",
+      "description": "PO issuer from header",
+      "properties": {
+        "name": {"type": "string", "description": "Buyer name"},
+        "gstin": {"type": "string", "description": "Buyer GSTIN"},
+        "pan": {"type": "string", "description": "Buyer PAN"},
+        "address": {"type": "string", "description": "Buyer address"},
+        "state": {"type": "string", "description": "Buyer state"},
+        "pincode": {"type": "string", "description": "Buyer pincode"},
+        "country": {"type": "string", "description": "Buyer country"},
+        "phone": {"type": "string", "description": "Buyer phone"},
+        "email": {"type": "string", "description": "Buyer email"}
+      },
+      "required": ["name"]
+    },
+    "seller": {
+      "type": "object",
+      "description": "Vendor/seller from VENDOR section",
+      "properties": {
+        "name": {"type": "string", "description": "Seller name"},
+        "gstin": {"type": "string", "description": "Seller GSTIN"},
+        "pan": {"type": "string", "description": "Seller PAN"},
+        "address": {"type": "string", "description": "Seller address"},
+        "state": {"type": "string", "description": "Seller state"},
+        "pincode": {"type": "string", "description": "Seller pincode"},
+        "country": {"type": "string", "description": "Seller country"},
+        "phone": {"type": "string", "description": "Seller phone"},
+        "email": {"type": "string", "description": "Seller email"}
+      },
+      "required": ["name"]
+    },
+    "line_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sr_no": {"type": "integer", "description": "Serial number"},
+          "description": {"type": "string", "description": "Item description"},
+          "hsn_code": {"type": "string", "description": "HSN/SAC code, digits only"},
+          "quantity": {"type": "number", "description": "Quantity"},
+          "unit": {"type": "string", "description": "Unit"},
+          "rate": {"type": "number", "description": "Unit price"},
+          "discount": {"type": "number", "description": "Discount amount"},
+          "taxable_value": {"type": "number", "description": "Taxable value"},
+          "cgst_rate": {"type": "number", "description": "CGST rate %"},
+          "cgst_amount": {"type": "number", "description": "CGST amount"},
+          "sgst_rate": {"type": "number", "description": "SGST rate %"},
+          "sgst_amount": {"type": "number", "description": "SGST amount"},
+          "igst_rate": {"type": "number", "description": "IGST rate %"},
+          "igst_amount": {"type": "number", "description": "IGST amount"},
+          "total_amount": {"type": "number", "description": "Total = taxable + tax"}
+        },
+        "required": ["sr_no", "description", "quantity", "rate"]
+      }
+    },
+    "totals": {
+      "type": "object",
+      "properties": {
+        "sub_total": {"type": "number", "description": "Subtotal"},
+        "total_tax_amount": {"type": "number", "description": "Total tax"},
+        "grand_total": {"type": "number", "description": "Grand total"},
+        "currency": {"type": "string", "description": "Currency"}
+      },
+      "required": ["grand_total"]
+    }
+  },
+  "required": ["purchaseorder_number", "buyer", "seller", "line_items", "totals"]
+}
