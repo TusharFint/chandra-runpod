@@ -1,0 +1,79 @@
+{
+  "doc_type": "invoice",
+  "parser_meta": {
+    "doc_type": "invoice",
+    "doc_type_confidence": 0.95,
+    "doc_type_source": "regex_classifier",
+    "seller_name_found": true,
+    "seller_gstin_found": true,
+    "buyer_name_found": true,
+    "buyer_gstin_found": true,
+    "line_item_count": 1,
+    "grand_total_found": true,
+    "total_before_tax_found": true,
+    "total_tax_amount_found": true
+  },
+  "extraction": {
+    "invoice_number": "N25263584",
+    "invoice_date": "07-01-2026",
+    "order_number": null,
+    "order_date": null,
+    "delivery_date": null,
+    "place_of_supply": "Karnataka (29)",
+    "place_of_delivery": null,
+    "mode_of_payment": null,
+    "is_rcm": false,
+    "rcm_description": null,
+    "amount_in_words": null,
+    "seller": {
+      "name": "GNV COMMODITIES PRIVATE LIMITED",
+      "gstin": "09AAFCG3865K1Z5",
+      "pan": null,
+      "address": "GNV COMMODITIES PRIVATE LIMITED C-201 Ground Floor Sector 63 Noida Uttar Pradesh 201301 India",
+      "state": "Uttar Pradesh",
+      "pincode": "201301",
+      "country": "GNV COMMODITIES PRIVATE LIMITED C-201 Ground Floor Sector 63 Noida Uttar Pradesh 201301 India",
+      "phone": null,
+      "email": null
+    },
+    "buyer": {
+      "name": "LASKA PETCARE SERVICES PRIVATE LIMITED",
+      "gstin": "29AACCL9011F1ZM",
+      "pan": null,
+      "address": "Ground Floor, NO 30/4, pride Quadra above Viva Showroom Hebbal 560024 Karnataka",
+      "state": "Karnataka",
+      "pincode": "560024",
+      "country": "pride Quadra above Viva Showroom Hebbal 560024 Karnataka",
+      "phone": "9606030531",
+      "email": null,
+      "billing_address": "Ground Floor, NO 30/4, pride Quadra above Viva Showroom Hebbal 560024 Karnataka"
+    },
+    "line_items": [
+      {
+        "sr_no": 1,
+        "description": "Acana Sport & Agility_Large_11.4 Kg",
+        "hsn_code": "23091000",
+        "quantity": 1.0,
+        "unit": "Nos",
+        "rate": null,
+        "discount": 23.0,
+        "taxable_value": 7177.31,
+        "cgst_rate": null,
+        "cgst_amount": null,
+        "sgst_rate": null,
+        "sgst_amount": null,
+        "igst_rate": 18.0,
+        "igst_amount": 1291.92,
+        "total_amount": 8469.23
+      }
+    ],
+    "totals": {
+      "total_before_tax": 7177.31,
+      "total_tax_amount": 1291.92,
+      "round_off": -0.23,
+      "grand_total": 8469.0
+    },
+    "bank_details": null,
+    "purchase_order": null
+  }
+}

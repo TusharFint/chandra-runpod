@@ -1,0 +1,103 @@
+{
+  "result": {
+    "invoice_number": "N25263584",
+    "invoice_id": "N25263584",
+    "invoice_date": "07-01-2026",
+    "invoice_value": 8469.0,
+    "adjustment": -0.23,
+    "bill_discount": "0.00",
+    "order_number": null,
+    "order_date": null,
+    "purchase_order": {
+      "purchaseorder_number": null,
+      "delivery_date": null
+    },
+    "seller": {
+      "name": "GNV COMMODITIES PRIVATE LIMITED",
+      "gst": "09AAFCG3865K1Z5",
+      "pan": null,
+      "address": "GNV COMMODITIES PRIVATE LIMITED C-201 Ground Floor Sector 63 Noida Uttar Pradesh 201301 India GSTIN 09AAFCG3865K1Z5 TAX INVOICE Invoice# : **N25263584 Invoice Date : **07-01-2026 Terms : **Postpaid - 28 Due Date : **04-02-2026 P.O.# : **SON/25-26-1905 Place Of Supply : **Karnataka (29)",
+      "state": "Karnataka",
+      "pincode": "201301",
+      "country": "GNV COMMODITIES PRIVATE LIMITED C-201 Ground Floor Sector 63 Noida Uttar Pradesh 201301 India GSTIN 09AAFCG3865K1Z5 TAX INVOICE Invoice# : **N25263584 Invoice Date : **07-01-2026 Terms : **Postpaid - 28 Due Date : **04-02-2026 P.O.# : **SON/25-26-1905 Place Of Supply : **Karnataka (29)",
+      "bank_details": {
+        "account_name": null,
+        "account_number": null,
+        "bank_name": null,
+        "branch": null,
+        "ifsc": null
+      },
+      "contact_details": {
+        "phone": null,
+        "email": null
+      }
+    },
+    "buyer": {
+      "name": "LASKA PETCARE SERVICES PRIVATE LIMITED",
+      "gst": "29AACCL9011F1ZM",
+      "pan": null,
+      "address": "Ground Floor, NO 30/4, pride Quadra above Viva Showroom Hebbal 560024 Karnataka",
+      "state": "Karnataka",
+      "pincode": "560024",
+      "country": "pride Quadra above Viva Showroom Hebbal 560024 Karnataka",
+      "bank_details": {
+        "account_name": null,
+        "account_number": null,
+        "bank_name": null,
+        "branch": null,
+        "ifsc": null
+      },
+      "contact_details": {
+        "phone": "9606030531",
+        "email": null
+      },
+      "billing_address": "Ground Floor, NO 30/4, pride Quadra above Viva Showroom Hebbal 560024 Karnataka",
+      "shipping_address": "Ground Floor, NO 30/4, pride Quadra above Viva Showroom Hebbal 560024 Karnataka"
+    },
+    "place_of_supply": "Karnataka (29)",
+    "place_of_delivery": null,
+    "line_items": [
+      {
+        "sl.no": "1",
+        "hsn": "23091000",
+        "description": "Acana Sport & Agility_Large_11.4 Kg",
+        "unit_price": null,
+        "qty": 1.0,
+        "net_amount": 7177.31,
+        "total_amount": 8469.23,
+        "line_item_discount": "23.0",
+        "igst_tax": {
+          "tax_type": "IGST",
+          "tax_rate": 18.0,
+          "tax_amount": 1291.92
+        },
+        "cgst_tax": null,
+        "sgst_tax": null,
+        "utsgst_tax": null
+      }
+    ],
+    "transaction_id": "N25263584",
+    "date_time": "07-01-2026",
+    "mode_of_payment": null,
+    "metadata": {
+      "source_filename": "16012026_GNV_7677.md",
+      "page_count": 1,
+      "pipeline": "chandra-parser",
+      "doc_type": "invoice",
+      "parser_meta": {
+        "doc_type": "invoice",
+        "doc_type_confidence": 0.95,
+        "doc_type_source": "regex_classifier",
+        "seller_name_found": true,
+        "seller_gstin_found": true,
+        "buyer_name_found": true,
+        "buyer_gstin_found": true,
+        "line_item_count": 1,
+        "grand_total_found": true,
+        "total_before_tax_found": true,
+        "total_tax_amount_found": true
+      }
+    }
+  },
+  "doc_type": "invoice"
+}

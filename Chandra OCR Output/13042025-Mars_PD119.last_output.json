@@ -1,0 +1,96 @@
+{
+  "doc_type": "invoice",
+  "parser_meta": {
+    "doc_type": "invoice",
+    "doc_type_confidence": 0.95,
+    "doc_type_source": "regex_classifier",
+    "seller_name_found": true,
+    "seller_gstin_found": true,
+    "buyer_name_found": true,
+    "buyer_gstin_found": true,
+    "line_item_count": 2,
+    "grand_total_found": true,
+    "total_before_tax_found": true,
+    "total_tax_amount_found": true
+  },
+  "extraction": {
+    "invoice_number": "9121140133",
+    "invoice_date": "06.04.2026",
+    "order_number": null,
+    "order_date": null,
+    "delivery_date": null,
+    "place_of_supply": "Karnataka",
+    "place_of_delivery": null,
+    "mode_of_payment": null,
+    "is_rcm": false,
+    "rcm_description": null,
+    "amount_in_words": null,
+    "seller": {
+      "name": "Mars International India Pvt. Ltd.",
+      "gstin": "29AAACE6794J2Z1",
+      "pan": null,
+      "address": "C/O. TCI Cold Chain Solutions Ltd Sy No. 30/3,4,5,6 kalukunte Agrahara village Anugoundan halli, HOBLI, Hoskote Taluk Bangalore 560067 Karnataka India",
+      "state": "Karnataka",
+      "pincode": "560067",
+      "country": "Hoskote Taluk Bangalore 560067 Karnataka India",
+      "phone": "1 8008892121",
+      "email": null
+    },
+    "buyer": {
+      "name": "Laska Petcare Services Pvt Ltd",
+      "gstin": "29AACCL9011F1ZM",
+      "pan": null,
+      "address": "S.No.68, SyNo.374/1, NRI Layout,, Kalkere Main Road Ram Murthy Nagar Bangalore 560016 Tel:9606030531",
+      "state": null,
+      "pincode": "560016",
+      "country": "Kalkere Main Road Ram Murthy Nagar Bangalore 560016 Tel:9606030531",
+      "phone": null,
+      "email": null,
+      "billing_address": "S.No.68, SyNo.374/1, NRI Layout,, Kalkere Main Road Ram Murthy Nagar Bangalore 560016 Tel:9606030531"
+    },
+    "line_items": [
+      {
+        "sr_no": 1,
+        "description": "SHEBA TnPumk&Car 2x14x70g MRP80",
+        "hsn_code": "23091000",
+        "quantity": 33.0,
+        "unit": "CS",
+        "rate": 1366.78,
+        "discount": null,
+        "taxable_value": 45103.86,
+        "cgst_rate": null,
+        "cgst_amount": 4059.35,
+        "sgst_rate": null,
+        "sgst_amount": 4059.35,
+        "igst_rate": null,
+        "igst_amount": null,
+        "total_amount": 53222.56
+      },
+      {
+        "sr_no": 2,
+        "description": "SHB MELTY Sasami Selection 240g*20MRP529",
+        "hsn_code": "23091000",
+        "quantity": 2.0,
+        "unit": "CS",
+        "rate": 6455.61,
+        "discount": null,
+        "taxable_value": 12911.22,
+        "cgst_rate": null,
+        "cgst_amount": 1162.01,
+        "sgst_rate": null,
+        "sgst_amount": 1162.01,
+        "igst_rate": null,
+        "igst_amount": null,
+        "total_amount": 15235.24
+      }
+    ],
+    "totals": {
+      "total_before_tax": 58015.08,
+      "total_tax_amount": 10442.72,
+      "round_off": 0.2,
+      "grand_total": 68458.0
+    },
+    "bank_details": null,
+    "purchase_order": null
+  }
+}

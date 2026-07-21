@@ -1,0 +1,393 @@
+{
+  "result": {
+    "invoice_number": "PR2600830",
+    "invoice_id": "PR2600830",
+    "invoice_date": "13/01/2026",
+    "invoice_value": 110600.0,
+    "adjustment": 0.47,
+    "bill_discount": "0.00",
+    "order_number": null,
+    "order_date": null,
+    "purchase_order": {
+      "purchaseorder_number": null,
+      "delivery_date": null
+    },
+    "seller": {
+      "name": "ATLAS DISTRIBUTORS PRIVATE LIMITED",
+      "gst": null,
+      "pan": "AABCA8887F",
+      "address": "No.1060/1047/941/1/77/1A/33/2, Eswari Industrial Estate, Bannerghatta Road, Hulimavu Main Road ContactNo : 7019999467 GSTIN No : 29AABCA8887F128 FSSAINO :",
+      "state": "",
+      "pincode": "",
+      "country": "Hulimavu Main Road ContactNo : 7019999467 GSTIN No : 29AABCA8887F128 FSSAINO :",
+      "bank_details": {
+        "account_name": null,
+        "account_number": null,
+        "bank_name": null,
+        "branch": null,
+        "ifsc": null
+      },
+      "contact_details": {
+        "phone": "7019999467",
+        "email": null
+      }
+    },
+    "buyer": {
+      "name": "LASKA PET CARE (DOG MY CATS)",
+      "gst": null,
+      "pan": null,
+      "address": "S.No.68, SyNo.374/1, NRI Layout, Kalkere Main Road, Ram Murthy Nagar, Bengaluru, Bengaluru Urban, Karnataka, 560016",
+      "state": "Karnataka",
+      "pincode": "560016",
+      "country": "560016",
+      "bank_details": {
+        "account_name": null,
+        "account_number": null,
+        "bank_name": null,
+        "branch": null,
+        "ifsc": null
+      },
+      "contact_details": {
+        "phone": null,
+        "email": null
+      },
+      "billing_address": "S.No.68, SyNo.374/1, NRI Layout, Kalkere Main Road, Ram Murthy Nagar, Bengaluru, Bengaluru Urban, Karnataka, 560016",
+      "shipping_address": "S.No.68, SyNo.374/1, NRI Layout, Kalkere Main Road, Ram Murthy Nagar, Bengaluru, Bengaluru Urban, Karnataka, 560016"
+    },
+    "place_of_supply": null,
+    "place_of_delivery": null,
+    "line_items": [
+      {
+        "sl.no": "1",
+        "hsn": "23091000",
+        "description": "Supercat ADLT Healthy Weight 4x3kg IN",
+        "unit_price": 745.76,
+        "qty": 1.0,
+        "net_amount": 2744.41,
+        "total_amount": 3238.4,
+        "line_item_discount": "238.64",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 247.0
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 247.0
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "2",
+        "hsn": "23091000",
+        "description": "Supercat Adult AllBreed chicken 10 kg IN",
+        "unit_price": 1796.61,
+        "qty": 2.0,
+        "net_amount": 3305.76,
+        "total_amount": 3900.8,
+        "line_item_discount": "287.46",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 297.52
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 297.52
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "3",
+        "hsn": "23091000",
+        "description": "SUPERCOAT Adult AllBreed Chkn 20kg IN",
+        "unit_price": 2915.25,
+        "qty": 2.0,
+        "net_amount": 5364.07,
+        "total_amount": 6329.5,
+        "line_item_discount": "466.44",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 482.77
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 482.77
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "4",
+        "hsn": "23091000",
+        "description": "FRISKIES Seafood 12X400g IN",
+        "unit_price": 125.42,
+        "qty": 3.0,
+        "net_amount": 346.17,
+        "total_amount": 408.43,
+        "line_item_discount": "30.1",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 31.16
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 31.16
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "5",
+        "hsn": "23091000",
+        "description": "FELIXADL Chicken 12(12x85g) XI",
+        "unit_price": 37.29,
+        "qty": 19.0,
+        "net_amount": 15473.09,
+        "total_amount": 18258.24,
+        "line_item_discount": "1530.3",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 1392.58
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 1392.58
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "6",
+        "hsn": "23091000",
+        "description": "FELIXADULT MacG 12(12x85g) XI",
+        "unit_price": 37.29,
+        "qty": 1.0,
+        "net_amount": 814.38,
+        "total_amount": 960.96,
+        "line_item_discount": "80.54",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 73.29
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 73.29
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "7",
+        "hsn": "23091000",
+        "description": "FELIXADULT Tunagi 12(12x85g) XI",
+        "unit_price": 37.29,
+        "qty": 10.0,
+        "net_amount": 8143.73,
+        "total_amount": 9609.6,
+        "line_item_discount": "805.42",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 732.94
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 732.94
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "8",
+        "hsn": "23091000",
+        "description": "FELIXAGAILKrn Chkn 12(12x85g) XI",
+        "unit_price": 37.29,
+        "qty": 30.0,
+        "net_amount": 24431.18,
+        "total_amount": 28828.8,
+        "line_item_discount": "2416.27",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 2198.81
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 2198.81
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "9",
+        "hsn": "23091000",
+        "description": "FELIXKITTENT Tunagi 12(12x85g) XI",
+        "unit_price": 37.29,
+        "qty": 25.0,
+        "net_amount": 20359.32,
+        "total_amount": 24024.0,
+        "line_item_discount": "2013.56",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 1832.34
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 1832.34
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "10",
+        "hsn": "23091000",
+        "description": "FRISKIES Surfin Favourites 6x1kg IN",
+        "unit_price": 257.63,
+        "qty": 1.0,
+        "net_amount": 1422.1,
+        "total_amount": 1678.08,
+        "line_item_discount": "123.66",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 127.99
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 127.99
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "11",
+        "hsn": "23091000",
+        "description": "FRISKIES Surfin Favourites 4x2.5kg IN",
+        "unit_price": 603.39,
+        "qty": 1.0,
+        "net_amount": 2220.48,
+        "total_amount": 2620.16,
+        "line_item_discount": "193.08",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 199.84
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 199.84
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "12",
+        "hsn": "23091000",
+        "description": "FELIXADL Salmon Gij 2(12x85g) Po12 IN",
+        "unit_price": 447.46,
+        "qty": 3.0,
+        "net_amount": 2443.12,
+        "total_amount": 2882.88,
+        "line_item_discount": "241.63",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 219.88
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 219.88
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "13",
+        "hsn": "23091000",
+        "description": "FRISKIES Meaty Grill 4x2.5kg IN",
+        "unit_price": 603.39,
+        "qty": 2.0,
+        "net_amount": 4440.95,
+        "total_amount": 5240.32,
+        "line_item_discount": "386.17",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 399.69
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 399.69
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "14",
+        "hsn": "23091000",
+        "description": "FRISKIES Indoor Delights 4x2.5kg IN",
+        "unit_price": 603.39,
+        "qty": 1.0,
+        "net_amount": 2220.48,
+        "total_amount": 2620.16,
+        "line_item_discount": "193.08",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 199.84
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 199.84
+        },
+        "utsgst_tax": null
+      }
+    ],
+    "transaction_id": "PR2600830",
+    "date_time": "13/01/2026",
+    "mode_of_payment": null,
+    "metadata": {
+      "source_filename": "16012026 Atlas 7686.md",
+      "page_count": 2,
+      "pipeline": "chandra-parser",
+      "doc_type": "invoice",
+      "parser_meta": {
+        "doc_type": "invoice",
+        "doc_type_confidence": 0.95,
+        "doc_type_source": "regex_classifier",
+        "seller_name_found": true,
+        "seller_gstin_found": false,
+        "buyer_name_found": true,
+        "buyer_gstin_found": false,
+        "line_item_count": 14,
+        "grand_total_found": true,
+        "total_before_tax_found": true,
+        "total_tax_amount_found": true
+      }
+    }
+  },
+  "doc_type": "invoice"
+}

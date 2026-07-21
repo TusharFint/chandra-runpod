@@ -1,0 +1,745 @@
+{
+  "result": {
+    "invoice_number": "KA-2627-6648",
+    "invoice_id": "KA-2627-6648",
+    "invoice_date": "30/04/2026",
+    "invoice_value": 8229.32,
+    "adjustment": 0,
+    "bill_discount": "0.00",
+    "order_number": null,
+    "order_date": null,
+    "purchase_order": {
+      "purchaseorder_number": null,
+      "delivery_date": null
+    },
+    "seller": {
+      "name": "Amazon Seller Services Private Limited",
+      "gst": "29AAICA3918J1ZE",
+      "pan": "AAICA3918J",
+      "address": "Sattva Horizon, Survey No 6/1 and 7/1, Vinayak Nagar, Kattigenahalli, Venkatala Village, Yelahanka Hobli, Bengaluru, Karnataka – 560064, India",
+      "state": "Karnataka",
+      "pincode": "560064",
+      "country": "India",
+      "bank_details": {
+        "account_name": null,
+        "account_number": null,
+        "bank_name": null,
+        "branch": null,
+        "ifsc": null
+      },
+      "contact_details": {
+        "phone": "+91 89 33420300",
+        "email": "customer-service@amazon.in"
+      }
+    },
+    "buyer": {
+      "name": "ESCA Consumer Health Private Limited",
+      "gst": "29AAICE5520C2ZU",
+      "pan": null,
+      "address": "\\* Building 2 ( Wh 2), Plot no. 12/P2 (IT Sector), Hitech, Defence and Aerospace Park, Devanahalli, Bengaluru, Karnataka, 562149, India",
+      "state": "Karnataka",
+      "pincode": "562149",
+      "country": "India",
+      "bank_details": {
+        "account_name": null,
+        "account_number": null,
+        "bank_name": null,
+        "branch": null,
+        "ifsc": null
+      },
+      "contact_details": {
+        "phone": null,
+        "email": null
+      },
+      "billing_address": "\\* Building 2 ( Wh 2), Plot no. 12/P2 (IT Sector), Hitech, Defence and Aerospace Park, Devanahalli, Bengaluru, Karnataka, 562149, India",
+      "shipping_address": "\\* Building 2 ( Wh 2), Plot no. 12/P2 (IT Sector), Hitech, Defence and Aerospace Park, Devanahalli, Bengaluru, Karnataka, 562149, India"
+    },
+    "place_of_supply": "Karnataka",
+    "place_of_delivery": null,
+    "line_items": [
+      {
+        "sl.no": "1",
+        "hsn": "998599",
+        "description": "Fixed Closing Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": 196.0,
+        "total_amount": 231.28,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 17.64
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 17.64
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "2",
+        "hsn": "998599",
+        "description": "Fixed Closing Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": 182.0,
+        "total_amount": 214.76,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 16.38
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 16.38
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "3",
+        "hsn": "998599",
+        "description": "Fixed Closing Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": 84.0,
+        "total_amount": 99.12,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 7.56
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 7.56
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "4",
+        "hsn": "998599",
+        "description": "Fixed Closing Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": 154.0,
+        "total_amount": 181.72,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 13.86
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 13.86
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "5",
+        "hsn": "998599",
+        "description": "Fixed Closing Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": 238.0,
+        "total_amount": 280.84,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 21.42
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 21.42
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "6",
+        "hsn": "998599",
+        "description": "Fixed Closing Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": 168.0,
+        "total_amount": 198.24,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 15.12
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 15.12
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "7",
+        "hsn": "998599",
+        "description": "Fixed Closing Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": 139.0,
+        "total_amount": 164.02,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 12.51
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 12.51
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "8",
+        "hsn": "998599",
+        "description": "Fixed Closing Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": 140.0,
+        "total_amount": 165.2,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 12.6
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 12.6
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "9",
+        "hsn": "998599",
+        "description": "Fixed Closing Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": 365.0,
+        "total_amount": 430.7,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 32.85
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 32.85
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "10",
+        "hsn": "998599",
+        "description": "Fixed Closing Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": 925.0,
+        "total_amount": 1091.5,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 83.25
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 83.25
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "11",
+        "hsn": "998599",
+        "description": "Fixed Closing Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": 505.0,
+        "total_amount": 595.9,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 45.45
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 45.45
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "12",
+        "hsn": "998599",
+        "description": "Fixed Closing Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": 776.0,
+        "total_amount": 915.68,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 69.84
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 69.84
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "13",
+        "hsn": "998599",
+        "description": "Fixed Closing Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": 164.0,
+        "total_amount": 193.52,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 14.76
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 14.76
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "14",
+        "hsn": "998599",
+        "description": "Fixed Closing Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": 69.0,
+        "total_amount": 81.42,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 6.21
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 6.21
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "15",
+        "hsn": "998599",
+        "description": "Fixed Closing Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": 112.0,
+        "total_amount": 132.16,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 10.08
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 10.08
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "16",
+        "hsn": "998599",
+        "description": "Fixed Closing Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": 140.0,
+        "total_amount": 165.2,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 12.6
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 12.6
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "17",
+        "hsn": "998599",
+        "description": "Fixed Closing Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": 168.0,
+        "total_amount": 198.24,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 15.12
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 15.12
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "18",
+        "hsn": "998599",
+        "description": "Fixed Closing Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": 168.0,
+        "total_amount": 198.24,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 15.12
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 15.12
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "19",
+        "hsn": "998599",
+        "description": "Fixed Closing Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": 154.0,
+        "total_amount": 181.72,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 13.86
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 13.86
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "20",
+        "hsn": "998599",
+        "description": "Fixed Closing Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": 182.0,
+        "total_amount": 214.76,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 16.38
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 16.38
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "21",
+        "hsn": "998599",
+        "description": "Fixed Closing Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": 182.0,
+        "total_amount": 214.76,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 16.38
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 16.38
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "22",
+        "hsn": "998599",
+        "description": "Fixed Closing Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": 84.0,
+        "total_amount": 99.12,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 7.56
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 7.56
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "23",
+        "hsn": "998599",
+        "description": "Fixed Closing Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": 56.0,
+        "total_amount": 66.08,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 5.04
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 5.04
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "24",
+        "hsn": "998599",
+        "description": "Fixed Closing Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": 237.0,
+        "total_amount": 279.66,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 21.33
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 21.33
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "25",
+        "hsn": "998599",
+        "description": "Fixed Closing Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": 154.0,
+        "total_amount": 181.72,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 13.86
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 13.86
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "26",
+        "hsn": "998599",
+        "description": "Fixed Closing Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": 266.0,
+        "total_amount": 313.88,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 23.94
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 23.94
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "27",
+        "hsn": "998599",
+        "description": "Fixed Closing Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": 280.0,
+        "total_amount": 330.4,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 25.2
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 25.2
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "28",
+        "hsn": "998599",
+        "description": "Fixed Closing Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": 238.0,
+        "total_amount": 280.84,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 21.42
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 21.42
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "29",
+        "hsn": "998599",
+        "description": "Fixed Closing Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": 280.0,
+        "total_amount": 330.4,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 25.2
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 25.2
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "30",
+        "hsn": "998599",
+        "description": "Fixed Closing Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": 168.0,
+        "total_amount": 198.24,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 15.12
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 15.12
+        },
+        "utsgst_tax": null
+      }
+    ],
+    "transaction_id": "KA-2627-6648",
+    "date_time": "30/04/2026",
+    "mode_of_payment": null,
+    "metadata": {
+      "source_filename": "KA-2627-6648.md",
+      "page_count": 4,
+      "pipeline": "chandra-parser",
+      "doc_type": "invoice",
+      "parser_meta": {
+        "doc_type": "invoice",
+        "doc_type_confidence": 0.95,
+        "doc_type_source": "regex_classifier",
+        "seller_name_found": true,
+        "seller_gstin_found": true,
+        "buyer_name_found": true,
+        "buyer_gstin_found": true,
+        "line_item_count": 30,
+        "grand_total_found": true,
+        "total_before_tax_found": true,
+        "total_tax_amount_found": true
+      }
+    }
+  },
+  "doc_type": "invoice"
+}

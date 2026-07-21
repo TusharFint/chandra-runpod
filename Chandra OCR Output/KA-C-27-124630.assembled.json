@@ -1,0 +1,614 @@
+{
+  "result": {
+    "credit_note_number": "KA-C-27-124630",
+    "credit_note_date": "30/04/2026",
+    "invoice_number": null,
+    "credit_note_value": -3124.64,
+    "adjustment": 0,
+    "order_number": null,
+    "order_date": null,
+    "purchase_order": {
+      "purchaseorder_number": null,
+      "delivery_date": null
+    },
+    "seller": {
+      "name": "Amazon Seller Services Private Limited",
+      "gst": "29AAICA3918J1ZE",
+      "pan": "AAICA3918J",
+      "address": "Sattva Horizon, Survey No 6/1 and 7/1, Vinayak Nagar, Kattigenahalli, Venkatala Village, Yelahanka Hobli, Bengaluru, Karnataka – 560064, India",
+      "state": "Karnataka",
+      "pincode": "560064",
+      "country": "India",
+      "bank_details": {
+        "account_name": null,
+        "account_number": null,
+        "bank_name": null,
+        "branch": null,
+        "ifsc": null
+      },
+      "contact_details": {
+        "phone": "+91 89 33420300",
+        "email": "customer-service@amazon.in"
+      }
+    },
+    "buyer": {
+      "name": "ESCA Consumer Health Private Limited",
+      "gst": "29AAICE5520C2ZU",
+      "pan": null,
+      "address": "\\*BLR FC16 Delhivery.com, Survey No. 221, Village Kolathur,, Hobli Kasaba, Taluka Hoskote, Bengaluru, HOSKOTE, KARNATAKA, 562114, IN",
+      "state": "Karnataka",
+      "pincode": "562114",
+      "country": "India",
+      "bank_details": {
+        "account_name": null,
+        "account_number": null,
+        "bank_name": null,
+        "branch": null,
+        "ifsc": null
+      },
+      "contact_details": {
+        "phone": null,
+        "email": null
+      },
+      "billing_address": "\\*BLR FC16 Delhivery.com, Survey No. 221, Village Kolathur,, Hobli Kasaba, Taluka Hoskote, Bengaluru, HOSKOTE, KARNATAKA, 562114, IN",
+      "shipping_address": "\\*BLR FC16 Delhivery.com, Survey No. 221, Village Kolathur,, Hobli Kasaba, Taluka Hoskote, Bengaluru, HOSKOTE, KARNATAKA, 562114, IN"
+    },
+    "place_of_supply": "KARNATAKA",
+    "place_of_delivery": null,
+    "is_rcm": false,
+    "rcm_description": null,
+    "line_items": [
+      {
+        "sl.no": "1",
+        "hsn": "996812",
+        "description": "EasyShip Weight Handling Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": -55.0,
+        "total_amount": -64.9,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": -4.95
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": -4.95
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "2",
+        "hsn": "996812",
+        "description": "EasyShip Weight Handling Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": -165.0,
+        "total_amount": -194.7,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": -14.85
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": -14.85
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "3",
+        "hsn": "996812",
+        "description": "EasyShip Weight Handling Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": -55.0,
+        "total_amount": -64.9,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": -4.95
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": -4.95
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "4",
+        "hsn": "996812",
+        "description": "EasyShip Weight Handling Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": -55.0,
+        "total_amount": -64.9,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": -4.95
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": -4.95
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "5",
+        "hsn": "996812",
+        "description": "EasyShip Weight Handling Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": -101.0,
+        "total_amount": -119.18,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": -9.09
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": -9.09
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "6",
+        "hsn": "996812",
+        "description": "EasyShip Weight Handling Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": -161.0,
+        "total_amount": -189.98,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": -14.49
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": -14.49
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "7",
+        "hsn": "996812",
+        "description": "EasyShip Weight Handling Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": -159.0,
+        "total_amount": -187.62,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": -14.31
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": -14.31
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "8",
+        "hsn": "996812",
+        "description": "EasyShip Weight Handling Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": -53.0,
+        "total_amount": -62.54,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": -4.77
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": -4.77
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "9",
+        "hsn": "996812",
+        "description": "EasyShip Weight Handling Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": -106.0,
+        "total_amount": -125.08,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": -9.54
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": -9.54
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "10",
+        "hsn": "996812",
+        "description": "EasyShip Weight Handling Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": -154.0,
+        "total_amount": -181.72,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": -13.86
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": -13.86
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "11",
+        "hsn": "996812",
+        "description": "EasyShip Weight Handling Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": -53.0,
+        "total_amount": -62.54,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": -4.77
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": -4.77
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "12",
+        "hsn": "996812",
+        "description": "EasyShip Weight Handling Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": -106.0,
+        "total_amount": -125.08,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": -9.54
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": -9.54
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "13",
+        "hsn": "996812",
+        "description": "EasyShip Weight Handling Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": -53.0,
+        "total_amount": -62.54,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": -4.77
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": -4.77
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "14",
+        "hsn": "996812",
+        "description": "EasyShip Weight Handling Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": -53.0,
+        "total_amount": -62.54,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": -4.77
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": -4.77
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "15",
+        "hsn": "996812",
+        "description": "EasyShip Weight Handling Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": -53.0,
+        "total_amount": -62.54,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": -4.77
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": -4.77
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "16",
+        "hsn": "996812",
+        "description": "EasyShip Weight Handling Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": -159.0,
+        "total_amount": -187.62,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": -14.31
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": -14.31
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "17",
+        "hsn": "996812",
+        "description": "EasyShip Weight Handling Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": -126.0,
+        "total_amount": -148.68,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": -11.34
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": -11.34
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "18",
+        "hsn": "996812",
+        "description": "EasyShip Weight Handling Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": -318.0,
+        "total_amount": -375.24,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": -28.62
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": -28.62
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "19",
+        "hsn": "996812",
+        "description": "EasyShip Weight Handling Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": -106.0,
+        "total_amount": -125.08,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": -9.54
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": -9.54
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "20",
+        "hsn": "996812",
+        "description": "EasyShip Weight Handling Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": -159.0,
+        "total_amount": -187.62,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": -14.31
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": -14.31
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "21",
+        "hsn": "996812",
+        "description": "EasyShip Weight Handling Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": -85.0,
+        "total_amount": -100.3,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": -7.65
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": -7.65
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "22",
+        "hsn": "996812",
+        "description": "EasyShip Weight Handling Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": -159.0,
+        "total_amount": -187.62,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": -14.31
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": -14.31
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "23",
+        "hsn": "996812",
+        "description": "EasyShip Weight Handling Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": -106.0,
+        "total_amount": -125.08,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": -9.54
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": -9.54
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "24",
+        "hsn": "996812",
+        "description": "EasyShip Weight Handling Fee",
+        "unit_price": null,
+        "qty": null,
+        "net_amount": -48.0,
+        "total_amount": -56.64,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": -4.32
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": -4.32
+        },
+        "utsgst_tax": null
+      }
+    ],
+    "transaction_id": "KA-C-27-124630",
+    "date_time": "30/04/2026",
+    "mode_of_payment": null,
+    "metadata": {
+      "source_filename": "KA-C-27-124630.md",
+      "page_count": 5,
+      "pipeline": "chandra-parser",
+      "doc_type": "credit_note",
+      "parser_meta": {
+        "doc_type": "credit_note",
+        "doc_type_confidence": 0.95,
+        "doc_type_source": "regex_classifier",
+        "seller_name_found": true,
+        "seller_gstin_found": true,
+        "buyer_name_found": true,
+        "buyer_gstin_found": true,
+        "line_item_count": 24,
+        "grand_total_found": true,
+        "total_before_tax_found": true,
+        "total_tax_amount_found": true
+      }
+    }
+  },
+  "doc_type": "credit_note"
+}

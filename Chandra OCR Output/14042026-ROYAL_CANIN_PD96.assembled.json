@@ -1,0 +1,415 @@
+{
+  "result": {
+    "invoice_number": "SIPBE20262307",
+    "invoice_id": "SIPBE20262307",
+    "invoice_date": "04/04/2026",
+    "invoice_value": 145666.37,
+    "adjustment": 0,
+    "bill_discount": "0.00",
+    "order_number": null,
+    "order_date": null,
+    "purchase_order": {
+      "purchaseorder_number": null,
+      "delivery_date": null
+    },
+    "seller": {
+      "name": "ROYAL CANIN INDIA PVT LTD",
+      "gst": "29AADCR4417J1Z6",
+      "pan": null,
+      "address": "C/o-Allicargo Supply Chain Pvt.Ltd. Survey No 7/2, Gangadharana Palya, Nelamangala BANGALORE, 562123",
+      "state": "",
+      "pincode": "562123",
+      "country": "562123",
+      "bank_details": {
+        "account_name": null,
+        "account_number": null,
+        "bank_name": null,
+        "branch": null,
+        "ifsc": null
+      },
+      "contact_details": {
+        "phone": "7400064034",
+        "email": null
+      }
+    },
+    "buyer": {
+      "name": "LASKA PETCARE SERVICES PRIVATE LIMITED",
+      "gst": "29AACCL9011F1ZM",
+      "pan": null,
+      "address": "S.NO. 68, SY NO.374/1, NRI LAYOUT, KALKERE ROAD, RAM MURTHY NAGAR, BENGALURU BANGALORE, 560016",
+      "state": "",
+      "pincode": "560016",
+      "country": "560016",
+      "bank_details": {
+        "account_name": null,
+        "account_number": null,
+        "bank_name": null,
+        "branch": null,
+        "ifsc": null
+      },
+      "contact_details": {
+        "phone": null,
+        "email": null
+      },
+      "billing_address": "S.NO. 68, SY NO.374/1, NRI LAYOUT, KALKERE ROAD, RAM MURTHY NAGAR, BENGALURU BANGALORE, 560016",
+      "shipping_address": "S.NO. 68, SY NO.374/1, NRI LAYOUT, KALKERE ROAD, RAM MURTHY NAGAR, BENGALURU BANGALORE, 560016"
+    },
+    "place_of_supply": "Karnataka-29",
+    "place_of_delivery": null,
+    "line_items": [
+      {
+        "sl.no": "1",
+        "hsn": "23091000",
+        "description": "KITTEN-36 0.4 KG MRP480",
+        "unit_price": 406.78,
+        "qty": 10.0,
+        "net_amount": 3294.92,
+        "total_amount": 3888.0,
+        "line_item_discount": "772.88",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 296.54
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 296.54
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "2",
+        "hsn": "23091000",
+        "description": "LABRADOR ADULT 3KG MRP3190",
+        "unit_price": 2703.39,
+        "qty": 10.0,
+        "net_amount": 21897.46,
+        "total_amount": 25839.0,
+        "line_item_discount": "5136.44",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 1970.77
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 1970.77
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "3",
+        "hsn": "23091000",
+        "description": "MAXI ADULT 10KG MRP7850",
+        "unit_price": 6652.54,
+        "qty": 8.0,
+        "net_amount": 43108.46,
+        "total_amount": 50867.98,
+        "line_item_discount": "10111.86",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 3879.76
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 3879.76
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "4",
+        "hsn": "23091000",
+        "description": "MINI PUPPY 800G MRP980",
+        "unit_price": 830.51,
+        "qty": 7.0,
+        "net_amount": 4708.99,
+        "total_amount": 5556.61,
+        "line_item_discount": "1104.58",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 423.81
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 423.81
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "5",
+        "hsn": "23091000",
+        "description": "FHN FIT32 2KG MRP2110",
+        "unit_price": 1788.14,
+        "qty": 6.0,
+        "net_amount": 8690.36,
+        "total_amount": 10254.62,
+        "line_item_discount": "2038.48",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 782.13
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 782.13
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "6",
+        "hsn": "23091000",
+        "description": "MAXI PUPPY 3.5+0.5 KG MRP 3535",
+        "unit_price": 2995.76,
+        "qty": 5.0,
+        "net_amount": 12132.83,
+        "total_amount": 14316.73,
+        "line_item_discount": "2845.97",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 1091.95
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 1091.95
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "7",
+        "hsn": "23091000",
+        "description": "PERSIAN KITTEN 2 KG MRP2950",
+        "unit_price": 2500.0,
+        "qty": 5.0,
+        "net_amount": 10125.0,
+        "total_amount": 11947.5,
+        "line_item_discount": "2375.0",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 911.25
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 911.25
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "8",
+        "hsn": "23091000",
+        "description": "STERILISED 7+ 1.5K MRP1590",
+        "unit_price": 1347.46,
+        "qty": 3.0,
+        "net_amount": 3274.33,
+        "total_amount": 3863.71,
+        "line_item_discount": "768.05",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 294.69
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 294.69
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "9",
+        "hsn": "23091000",
+        "description": "MAXI PUPPY 10X140G MRP1700",
+        "unit_price": 1440.68,
+        "qty": 2.0,
+        "net_amount": 2333.9,
+        "total_amount": 2754.0,
+        "line_item_discount": "547.46",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 210.05
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 210.05
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "10",
+        "hsn": "23091000",
+        "description": "MAXI STARTER 4KG MRP4220",
+        "unit_price": 3576.27,
+        "qty": 2.0,
+        "net_amount": 5793.56,
+        "total_amount": 6836.4,
+        "line_item_discount": "1358.98",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 521.42
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 521.42
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "11",
+        "hsn": "23091000",
+        "description": "KITTEN 36 2 KG MRP2340",
+        "unit_price": 1983.05,
+        "qty": 2.0,
+        "net_amount": 3212.54,
+        "total_amount": 3790.8,
+        "line_item_discount": "753.56",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 289.13
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 289.13
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "12",
+        "hsn": "23091000",
+        "description": "FBN PERSIAN 400G MRP640",
+        "unit_price": 542.37,
+        "qty": 2.0,
+        "net_amount": 878.64,
+        "total_amount": 1036.8,
+        "line_item_discount": "206.1",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 79.08
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 79.08
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "13",
+        "hsn": "23091000",
+        "description": "MINI STARTER 1KG MRP1170",
+        "unit_price": 991.53,
+        "qty": 2.0,
+        "net_amount": 1606.28,
+        "total_amount": 1895.42,
+        "line_item_discount": "376.78",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 144.57
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 144.57
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "14",
+        "hsn": "23091000",
+        "description": "FBN KITTEN PERSIAN 400G MRP620",
+        "unit_price": 525.42,
+        "qty": 2.0,
+        "net_amount": 851.18,
+        "total_amount": 1004.4,
+        "line_item_discount": "199.66",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 76.61
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 76.61
+        },
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "15",
+        "hsn": "23091000",
+        "description": "MAXI STARTER 1KG MRP1120",
+        "unit_price": 949.15,
+        "qty": 2.0,
+        "net_amount": 1537.62,
+        "total_amount": 1814.4,
+        "line_item_discount": "360.68",
+        "igst_tax": null,
+        "cgst_tax": {
+          "tax_type": "CGST",
+          "tax_rate": 9.0,
+          "tax_amount": 138.39
+        },
+        "sgst_tax": {
+          "tax_type": "SGST",
+          "tax_rate": 9.0,
+          "tax_amount": 138.39
+        },
+        "utsgst_tax": null
+      }
+    ],
+    "transaction_id": "SIPBE20262307",
+    "date_time": "04/04/2026",
+    "mode_of_payment": null,
+    "metadata": {
+      "source_filename": "14042026-ROYAL_CANIN_PD96.md",
+      "page_count": 4,
+      "pipeline": "chandra-parser",
+      "doc_type": "invoice",
+      "parser_meta": {
+        "doc_type": "invoice",
+        "doc_type_confidence": 0.95,
+        "doc_type_source": "regex_classifier",
+        "seller_name_found": true,
+        "seller_gstin_found": true,
+        "buyer_name_found": true,
+        "buyer_gstin_found": true,
+        "line_item_count": 15,
+        "grand_total_found": true,
+        "total_before_tax_found": true,
+        "total_tax_amount_found": true
+      }
+    }
+  },
+  "doc_type": "invoice"
+}

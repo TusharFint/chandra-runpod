@@ -1,0 +1,243 @@
+{
+  "result": {
+    "invoice_number": "ANJ/2526/949",
+    "invoice_id": "ANJ/2526/949",
+    "invoice_date": "16-02-2026",
+    "invoice_value": 44759.0,
+    "adjustment": 0.2,
+    "bill_discount": "0.00",
+    "order_number": null,
+    "order_date": null,
+    "purchase_order": {
+      "purchaseorder_number": null,
+      "delivery_date": null
+    },
+    "seller": {
+      "name": "ANJANADRI ENTERPRISES",
+      "gst": "29BTIPG6034N1Z8",
+      "pan": "BTIPG6034N",
+      "address": "No 358 housing board colony news Yelahanka s new town news b sector Yelahanka new town Bangalore, YELAHANKA NEW TOWN, BENGALURU, Karnataka, 560064,",
+      "state": "Karnataka",
+      "pincode": "560064",
+      "country": "560064",
+      "bank_details": {
+        "account_name": null,
+        "account_number": null,
+        "bank_name": null,
+        "branch": null,
+        "ifsc": null
+      },
+      "contact_details": {
+        "phone": null,
+        "email": "villagecowghee91@gmail.com"
+      }
+    },
+    "buyer": {
+      "name": "WORLDWIDE DELIGHTS PRIVATE LIMITED",
+      "gst": "36AADCW4733A1ZM",
+      "pan": null,
+      "address": "Plot No 1253/P, 1262, SY No 165/166/167/168, Pragathi Nagar, Kukatpally, Hyderabad, Medchal Malkajgiri, Hyderabad, Telangana, 500072 NO 81.355/10 & 8.1.355./10/A TOLI CHOWKI HYDERABAD , Hyderabad, Telangana, 500008",
+      "state": "Telangana",
+      "pincode": "500072",
+      "country": "500008",
+      "bank_details": {
+        "account_name": null,
+        "account_number": null,
+        "bank_name": null,
+        "branch": null,
+        "ifsc": null
+      },
+      "contact_details": {
+        "phone": "8105257137",
+        "email": null
+      },
+      "billing_address": "Plot No 1253/P, 1262, SY No 165/166/167/168, Pragathi Nagar, Kukatpally, Hyderabad, Medchal Malkajgiri, Hyderabad, Telangana, 500072 NO 81.355/10 & 8.1.355./10/A TOLI CHOWKI HYDERABAD , Hyderabad, Telangana, 500008",
+      "shipping_address": "Plot No 1253/P, 1262, SY No 165/166/167/168, Pragathi Nagar, Kukatpally, Hyderabad, Medchal Malkajgiri, Hyderabad, Telangana, 500072 NO 81.355/10 & 8.1.355./10/A TOLI CHOWKI HYDERABAD , Hyderabad, Telangana, 500008"
+    },
+    "place_of_supply": "TOLICHOWKI",
+    "place_of_delivery": null,
+    "line_items": [
+      {
+        "sl.no": "1",
+        "hsn": "040590",
+        "description": "VILLAGE COW GHEE 1 LITER",
+        "unit_price": 1260.0,
+        "qty": 24.0,
+        "net_amount": 17280.0,
+        "total_amount": 18144.0,
+        "line_item_discount": "12096.0",
+        "igst_tax": {
+          "tax_type": "IGST",
+          "tax_rate": 5.0,
+          "tax_amount": 864.0
+        },
+        "cgst_tax": null,
+        "sgst_tax": null,
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "2",
+        "hsn": "040590",
+        "description": "VILLAGE COW GHEE 500 ml",
+        "unit_price": 650.0,
+        "qty": 24.0,
+        "net_amount": 8914.29,
+        "total_amount": 9360.0,
+        "line_item_discount": "6240.0",
+        "igst_tax": {
+          "tax_type": "IGST",
+          "tax_rate": 5.0,
+          "tax_amount": 445.71
+        },
+        "cgst_tax": null,
+        "sgst_tax": null,
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "3",
+        "hsn": "040590",
+        "description": "VILLAGE COW GHEE 200 ml",
+        "unit_price": 290.0,
+        "qty": 24.0,
+        "net_amount": 3977.14,
+        "total_amount": 4176.0,
+        "line_item_discount": "2784.0",
+        "igst_tax": {
+          "tax_type": "IGST",
+          "tax_rate": 5.0,
+          "tax_amount": 198.86
+        },
+        "cgst_tax": null,
+        "sgst_tax": null,
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "4",
+        "hsn": "04090000",
+        "description": "Village Honey 250 ML",
+        "unit_price": 270.0,
+        "qty": 24.0,
+        "net_amount": 3564.0,
+        "total_amount": 3742.2,
+        "line_item_discount": "2916.0",
+        "igst_tax": {
+          "tax_type": "IGST",
+          "tax_rate": 5.0,
+          "tax_amount": 178.2
+        },
+        "cgst_tax": null,
+        "sgst_tax": null,
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "5",
+        "hsn": "04090000",
+        "description": "Village Honey 500 ML",
+        "unit_price": 420.0,
+        "qty": 24.0,
+        "net_amount": 5544.0,
+        "total_amount": 5821.2,
+        "line_item_discount": "4536.0",
+        "igst_tax": {
+          "tax_type": "IGST",
+          "tax_rate": 5.0,
+          "tax_amount": 277.2
+        },
+        "cgst_tax": null,
+        "sgst_tax": null,
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "6",
+        "hsn": "09104030",
+        "description": "VILLAGE CINNAMON POWDER - 100GRM",
+        "unit_price": 160.0,
+        "qty": 6.0,
+        "net_amount": 576.0,
+        "total_amount": 604.8,
+        "line_item_discount": "384.0",
+        "igst_tax": {
+          "tax_type": "IGST",
+          "tax_rate": 5.0,
+          "tax_amount": 28.8
+        },
+        "cgst_tax": null,
+        "sgst_tax": null,
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "7",
+        "hsn": "09104030",
+        "description": "VILLAGE TURMERIC POWDER - 100GRM",
+        "unit_price": 170.0,
+        "qty": 6.0,
+        "net_amount": 612.0,
+        "total_amount": 642.6,
+        "line_item_discount": "408.0",
+        "igst_tax": {
+          "tax_type": "IGST",
+          "tax_rate": 5.0,
+          "tax_amount": 30.6
+        },
+        "cgst_tax": null,
+        "sgst_tax": null,
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "8",
+        "hsn": "040590",
+        "description": "VILLAGE BUFFALO GHEE 200 GRM",
+        "unit_price": 300.0,
+        "qty": 12.0,
+        "net_amount": 2160.0,
+        "total_amount": 2268.0,
+        "line_item_discount": "1440.0",
+        "igst_tax": {
+          "tax_type": "IGST",
+          "tax_rate": 5.0,
+          "tax_amount": 108.0
+        },
+        "cgst_tax": null,
+        "sgst_tax": null,
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "9",
+        "hsn": "",
+        "description": "144",
+        "unit_price": 2131.37,
+        "qty": null,
+        "net_amount": null,
+        "total_amount": null,
+        "line_item_discount": "44758.8",
+        "igst_tax": null,
+        "cgst_tax": null,
+        "sgst_tax": null,
+        "utsgst_tax": null
+      }
+    ],
+    "transaction_id": "ANJ/2526/949",
+    "date_time": "16-02-2026",
+    "mode_of_payment": null,
+    "metadata": {
+      "source_filename": "image (1).md",
+      "page_count": 1,
+      "pipeline": "chandra-parser",
+      "doc_type": "invoice",
+      "parser_meta": {
+        "doc_type": "invoice",
+        "doc_type_confidence": 0.95,
+        "doc_type_source": "regex_classifier",
+        "seller_name_found": true,
+        "seller_gstin_found": true,
+        "buyer_name_found": true,
+        "buyer_gstin_found": true,
+        "line_item_count": 9,
+        "grand_total_found": true,
+        "total_before_tax_found": true,
+        "total_tax_amount_found": true
+      }
+    }
+  },
+  "doc_type": "invoice"
+}

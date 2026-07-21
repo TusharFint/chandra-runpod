@@ -1,0 +1,113 @@
+{
+  "result": {
+    "invoice_number": "9121140133",
+    "invoice_id": "9121140133",
+    "invoice_date": "06.04.2026",
+    "invoice_value": 68458.0,
+    "adjustment": 0.2,
+    "bill_discount": "0.00",
+    "order_number": null,
+    "order_date": null,
+    "purchase_order": {
+      "purchaseorder_number": null,
+      "delivery_date": null
+    },
+    "seller": {
+      "name": "Mars International India Pvt. Ltd.",
+      "gst": "29AAACE6794J2Z1",
+      "pan": null,
+      "address": "C/O. TCI Cold Chain Solutions Ltd Sy No. 30/3,4,5,6 kalukunte Agrahara village Anugoundan halli, HOBLI, Hoskote Taluk Bangalore 560067 Karnataka India GSTIN: 29AAACE6794J2Z1",
+      "state": "Karnataka",
+      "pincode": "560067",
+      "country": "Hoskote Taluk Bangalore 560067 Karnataka India GSTIN: 29AAACE6794J2Z1",
+      "bank_details": {
+        "account_name": null,
+        "account_number": null,
+        "bank_name": null,
+        "branch": null,
+        "ifsc": null
+      },
+      "contact_details": {
+        "phone": "1 8008892121",
+        "email": null
+      }
+    },
+    "buyer": {
+      "name": "Laska Petcare Services Pvt Ltd",
+      "gst": "29AACCL9011F1ZM",
+      "pan": null,
+      "address": "S.No.68, SyNo.374/1, NRI Layout,, Kalkere Main Road Ram Murthy Nagar Bangalore 560016 Tel:9606030531",
+      "state": "",
+      "pincode": "560016",
+      "country": "Kalkere Main Road Ram Murthy Nagar Bangalore 560016 Tel:9606030531",
+      "bank_details": {
+        "account_name": null,
+        "account_number": null,
+        "bank_name": null,
+        "branch": null,
+        "ifsc": null
+      },
+      "contact_details": {
+        "phone": null,
+        "email": null
+      },
+      "billing_address": "S.No.68, SyNo.374/1, NRI Layout,, Kalkere Main Road Ram Murthy Nagar Bangalore 560016 Tel:9606030531",
+      "shipping_address": "S.No.68, SyNo.374/1, NRI Layout,, Kalkere Main Road Ram Murthy Nagar Bangalore 560016 Tel:9606030531"
+    },
+    "place_of_supply": "Karnataka",
+    "place_of_delivery": null,
+    "line_items": [
+      {
+        "sl.no": "1",
+        "hsn": "23091000",
+        "description": "SHEBA TnPumk&Car 2x14x70g MRP80",
+        "unit_price": 1366.78,
+        "qty": 33.0,
+        "net_amount": 45103.86,
+        "total_amount": 53222.56,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": null,
+        "sgst_tax": null,
+        "utsgst_tax": null
+      },
+      {
+        "sl.no": "2",
+        "hsn": "23091000",
+        "description": "SHB MELTY Sasami Selection 240g*20MRP529",
+        "unit_price": 6455.61,
+        "qty": 2.0,
+        "net_amount": 12911.22,
+        "total_amount": 15235.24,
+        "line_item_discount": "0",
+        "igst_tax": null,
+        "cgst_tax": null,
+        "sgst_tax": null,
+        "utsgst_tax": null
+      }
+    ],
+    "transaction_id": "9121140133",
+    "date_time": "06.04.2026",
+    "mode_of_payment": null,
+    "metadata": {
+      "source_filename": "13042025-Mars_PD119.md",
+      "page_count": 1,
+      "pipeline": "chandra-parser",
+      "doc_type": "invoice",
+      "parser_meta": {
+        "doc_type": "invoice",
+        "doc_type_confidence": 0.95,
+        "doc_type_source": "regex_classifier",
+        "seller_name_found": true,
+        "seller_gstin_found": true,
+        "buyer_name_found": true,
+        "buyer_gstin_found": true,
+        "line_item_count": 2,
+        "grand_total_found": true,
+        "total_before_tax_found": true,
+        "total_tax_amount_found": true
+      }
+    }
+  },
+  "doc_type": "invoice"
+}
