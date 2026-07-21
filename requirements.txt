@@ -1,5 +1,6 @@
 runpod
 chandra-ocr[hf]>=0.2.0
-bitsandbytes>=0.45.0
 pypdfium2>=4.30.0
 accelerate>=1.11.0
+beautifulsoup4>=4.12
+lxml>=5.0

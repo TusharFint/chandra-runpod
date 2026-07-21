@@ -1,7 +1,7 @@
-# ChandraOCR 2 + Qwen 2.5 dual-model pipeline.
+# ChandraOCR 2 markdown-only pipeline.
 # Self-contained repo — build context is this directory.
 #
-#   docker build -t ghcr.io/tusharfint/chandra-runpod:v2 .
+#   docker build -t ghcr.io/tusharfint/chandra-runpod:v4 .
 
 FROM python:3.12-slim
 
@@ -41,24 +41,19 @@ RUN apt-get update && apt-get install -y --no-install-recommends build-essential
 
 # Chandra pipeline code
 COPY src ./src
-COPY handler.py ./
-
-# Shared modules (classifier + assembler)
-COPY shared ./shared
-
-# Schemas + skills
 COPY schemas ./schemas
-COPY skills ./skills
+COPY shared ./shared
+COPY handler.py ./
 
 # ------------------------------------------------------------------ #
 # Runtime configuration
 # ------------------------------------------------------------------ #
 ENV TORCH_DEVICE=cuda:0
+ENV PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 ENV CC=/usr/bin/gcc
 ENV PYTHONPATH=/app
 ENV HF_HOME=/runpod-volume/hf_cache
 ENV MODEL_CHECKPOINT=datalab-to/chandra-ocr-2
-ENV EXTRACTION_MODEL=Qwen/Qwen2.5-Coder-7B-Instruct
 ENV CHANDRA_MAX_TOKENS=12384
 
 RUN mkdir -p /runpod-volume/hf_cache

@@ -1,7 +1,6 @@
-"""Interactive single-PDF test client for the ChandraOCR + Qwen RunPod endpoint.
+"""Interactive single-PDF test client for the ChandraOCR 2 RunPod endpoint.
 
-Processes one PDF at a time, saves output as <pdf_name>.json, then asks
-whether to process another PDF or quit.
+Sends a PDF, receives markdown output, saves as <pdf_name>.md.
 
 Usage:
     python test_single_runpod.py
@@ -17,14 +16,6 @@ import time
 from pathlib import Path
 
 import requests
-
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "shared"))
-
-try:
-    from classify.classifier import classify_document
-except ImportError:
-    print("Warning: could not import classifier. Local classification will be skipped.")
-    classify_document = None
 
 OUTPUT_DIR = Path(__file__).resolve().parent / "output"
 POLL_INTERVAL = 5
@@ -83,12 +74,6 @@ def process_one_pdf(base_url, headers, pdf_path_str):
     print(f"  Processing: {pdf_path.name}")
     print(f"{'='*60}")
 
-    if classify_document:
-        doc_type, confidence = classify_document(str(pdf_path))
-        print(f"  Classification: {doc_type} (conf={confidence:.2f})")
-    else:
-        print("  Classification: Skipped (import error)")
-
     payload, size_mb, error = encode_pdf(pdf_path)
     if error:
         print(f"  Error: {error}")
@@ -108,38 +93,18 @@ def process_one_pdf(base_url, headers, pdf_path_str):
     output = result.get("output", {})
 
     if status == "COMPLETED":
-        print(f"\n  Success! Total time: {elapsed:.1f}s")
+        markdown = output.get("markdown", "")
+        page_count = output.get("page_count", 0)
+        pipeline = output.get("pipeline", "unknown")
 
-        remote_doc_type = output.get("doc_type", "unknown")
-        extraction = output.get("result", output)
-        pipeline = (
-            output.get("result", {}).get("metadata", {}).get("pipeline", "unknown")
-        )
-
-        print(f"  Type: {remote_doc_type}")
+        print(f"\n  Success! {elapsed:.1f}s | {page_count} pages | {len(markdown)} chars")
         print(f"  Pipeline: {pipeline}")
-
-        if isinstance(extraction, dict):
-            items = len(extraction.get("line_items", []))
-            print(f"  Line items: {items}")
-
-            if remote_doc_type == "credit_note":
-                ref = extraction.get("credit_note_number")
-                val = extraction.get("credit_note_value")
-            elif remote_doc_type == "purchase_order":
-                ref = extraction.get("purchaseorder_number")
-                val = extraction.get("totals", {}).get("grand_total")
-            else:
-                ref = extraction.get("invoice_number")
-                val = extraction.get("invoice_value")
-
-            print(f"  Reference: {ref}")
-            print(f"  Value: {val}")
+        preview = markdown[:200].replace("\n", " ")
+        print(f"  Preview: {preview}...")
 
         OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-        out_file = OUTPUT_DIR / f"{pdf_path.stem}.json"
-        with open(out_file, "w", encoding="utf-8") as f:
-            json.dump(output, f, indent=2, ensure_ascii=False)
+        out_file = OUTPUT_DIR / f"{pdf_path.stem}.md"
+        out_file.write_text(markdown, encoding="utf-8")
         print(f"\n  Saved to: {out_file}")
     else:
         print(f"\n  Job failed: {status}")
@@ -148,13 +113,13 @@ def process_one_pdf(base_url, headers, pdf_path_str):
 
 def main():
     p = argparse.ArgumentParser(
-        description="Test single PDFs on ChandraOCR + Qwen RunPod endpoint."
+        description="Test single PDFs on ChandraOCR 2 RunPod endpoint."
     )
     p.add_argument("--pdf", help="Path to the PDF file (skips first prompt).")
     p.add_argument(
         "--endpoint-id",
         default=os.environ.get("CHANDRA_ENDPOINT_ID"),
-        help="RunPod serverless endpoint ID for the chandra pipeline.",
+        help="RunPod serverless endpoint ID.",
     )
     p.add_argument(
         "--api-key",
@@ -173,7 +138,7 @@ def main():
     headers = {"Authorization": f"Bearer {args.api_key}"}
 
     print("\n" + "=" * 60)
-    print("  ChandraOCR + Qwen 2.5 — Interactive PDF Extraction")
+    print("  ChandraOCR 2 — Markdown OCR")
     print("=" * 60)
 
     next_pdf = args.pdf

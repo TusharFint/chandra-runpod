@@ -1,12 +1,30 @@
-"""RunPod Serverless Handler — ChandraOCR 2 + Qwen 2.5 pipeline.
+"""RunPod Serverless Handler — ChandraOCR 2 markdown + deterministic JSON.
+
+Default behaviour (markdown-first-then-JSON):
+    1. Run ChandraOCR 2 to produce per-page HTML/markdown.
+    2. Run the deterministic parser (``src.parser``) on the markdown to
+       produce a structured extraction dict.
+    3. Feed that dict through the existing ``shared.merge.assembler`` to
+       produce the final schema-shaped JSON.
 
 Input (event['input']):
-    pdf_base64 : str  — base64-encoded PDF
-    pdf_url    : str  — URL to download PDF
+    pdf_base64 : str           — base64-encoded PDF            (required*)
+    pdf_url    : str           — URL to download PDF           (required*)
+    extract    : bool          — default True. Set False to skip
+                                 Stage 2 and return markdown only.
+    doc_type   : str | None    — optional override ('invoice' |
+                                 'credit_note' | 'purchase_order')
 
-Output:
-    Assembled dict matching the same schema as the lift endpoint,
-    with additional metadata: pipeline="chandra-qwen2.5".
+Output (extract=True):
+    {
+        "markdown":   "<all pages joined>",
+        "page_count": N,
+        "pages":      [...],
+        "pipeline":   "chandra-parser",
+        "doc_type":   "credit_note",
+        "result":     { ...assembled JSON... },
+        "parser_meta": { ...per-field source flags... }
+    }
 """
 
 import base64
@@ -20,17 +38,11 @@ import runpod
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Make /app/shared importable (classifier + assembler live there)
-_SHARED_DIR = os.path.join(os.path.dirname(__file__), "shared")
-if _SHARED_DIR not in sys.path:
-    sys.path.insert(0, _SHARED_DIR)
-
 # --------------------------------------------------------------------------- #
-# Lazy model singletons
+# Lazy model singleton
 # --------------------------------------------------------------------------- #
 
 _chandra_mgr = None
-_qwen_mgr = None
 
 
 def get_chandra_manager():
@@ -43,14 +55,57 @@ def get_chandra_manager():
     return _chandra_mgr
 
 
-def get_qwen_manager():
-    global _qwen_mgr
-    if _qwen_mgr is None:
-        from src.qwen_mgr import QwenManager
+# --------------------------------------------------------------------------- #
+# Stage 2: deterministic markdown -> assembled JSON
+# --------------------------------------------------------------------------- #
 
-        _qwen_mgr = QwenManager()
-        logger.info("Initialized QwenManager")
-    return _qwen_mgr
+
+def _run_stage2(markdown, page_count, doc_type_override=None):
+    """Parse markdown and run it through the doc-type assembler.
+
+    Returns ``(result_body, doc_type, parser_meta)`` or ``(None, None, None)``
+    on failure. Errors are logged but never raised so the handler always
+    returns the markdown even if Stage 2 fails.
+    """
+    try:
+        from src.parser import parse
+        from merge.assembler import get_assembler
+    except ImportError as e:
+        logger.exception("Stage 2 imports failed: %s", e)
+        return None, None, None
+
+    try:
+        result = parse(markdown, doc_type=doc_type_override)
+    except Exception:
+        logger.exception("Parser failed; returning markdown only")
+        return None, None, None
+
+    doc_type = result.doc_type
+
+    try:
+        assembler = get_assembler(doc_type)
+
+        class _LiftLike:
+            def __init__(self, extraction, metadata):
+                self.extraction = extraction
+                self.metadata = metadata
+
+        lift = _LiftLike(
+            extraction=result.extraction,
+            metadata={"page_count": page_count},
+        )
+        # PDF path is only used as a filename hint; pass an empty string so
+        # the assembler falls back to metadata.page_count.
+        assembled = assembler.build("", lift)
+        body = assembled.get("result", assembled) if isinstance(assembled, dict) else {}
+        body.setdefault("metadata", {})
+        body["metadata"]["pipeline"] = "chandra-parser"
+        body["metadata"]["doc_type"] = doc_type
+        body["metadata"]["parser_meta"] = result.parser_meta
+        return body, doc_type, result.parser_meta
+    except Exception:
+        logger.exception("Assembler failed; returning markdown only")
+        return None, doc_type, result.parser_meta
 
 
 # --------------------------------------------------------------------------- #
@@ -62,6 +117,8 @@ def handler(event):
     input_data = event.get("input", {})
     pdf_base64 = input_data.get("pdf_base64")
     pdf_url = input_data.get("pdf_url")
+    extract = input_data.get("extract", True)
+    doc_type_override = input_data.get("doc_type")
 
     if not pdf_base64 and not pdf_url:
         return {"error": "Missing pdf_base64 or pdf_url in input"}
@@ -77,52 +134,47 @@ def handler(event):
         pdf_path = tmp.name
 
     try:
-        # --- Step 1: Classify ------------------------------------------ #
-        from classify.classifier import classify_document
-
-        doc_type, confidence = classify_document(pdf_path)
-        logger.info(f"Classified as '{doc_type}' (confidence={confidence})")
-
-        # --- Step 2: Select schema + skill + assembler ----------------- #
-        from merge.assembler import get_schema, get_assembler
-        from src.extractor import get_skill, extract, ExtractionResult
-
-        schema = get_schema(doc_type)
-        skill = get_skill(doc_type)
-        assembler = get_assembler(doc_type)
-
-        # --- Step 3: Stage 1 — OCR (ChandraOCR 2) --------------------- #
+        # --- OCR (ChandraOCR 2, page-by-page) --------------------------- #
         chandra = get_chandra_manager()
         markdown, ocr_meta = chandra.ocr(pdf_path)
 
-        # --- Step 4: Stage 2 — Extraction (Qwen 2.5) ------------------ #
-        qwen = get_qwen_manager()
-        extraction_dict = extract(qwen, markdown, schema, skill)
+        # Unload model to free VRAM between requests
+        _chandra_mgr._model = None
+        import torch
+        torch.cuda.empty_cache()
+        logger.info("Unloaded ChandraOCR, freed VRAM")
 
-        # --- Step 5: Assemble ------------------------------------------ #
-        result = ExtractionResult(
-            extraction=extraction_dict,
-            metadata={"page_count": ocr_meta.get("page_count")},
-        )
-        assembled = assembler.build(pdf_path, result)
+        # --- Build response: markdown-first ----------------------------- #
+        response = {
+            "markdown": markdown,
+            "page_count": ocr_meta.get("page_count"),
+            "pages": ocr_meta.get("pages"),
+            "pipeline": "chandra-ocr-2",
+        }
 
-        # --- Step 6: Inject metadata ---------------------------------- #
-        if isinstance(assembled, dict) and "result" in assembled:
-            assembled["result"].setdefault("metadata", {})
-            assembled["result"]["metadata"]["doc_type"] = doc_type
-            assembled["result"]["metadata"][
-                "classification_confidence"
-            ] = confidence
-            assembled["result"]["metadata"]["pipeline"] = "chandra-qwen2.5"
-            assembled["result"]["metadata"][
-                "ocr_token_count"
-            ] = ocr_meta.get("total_token_count")
-        assembled["doc_type"] = doc_type
+        # --- Stage 2: deterministic JSON -------------------------------- #
+        if extract:
+            body, doc_type, parser_meta = _run_stage2(
+                markdown,
+                page_count=ocr_meta.get("page_count"),
+                doc_type_override=doc_type_override,
+            )
+            if body is not None:
+                response["pipeline"] = "chandra-parser"
+                response["doc_type"] = doc_type
+                response["result"] = body
+                if parser_meta is not None:
+                    response["parser_meta"] = parser_meta
+            else:
+                response["pipeline"] = "chandra-ocr-2"
+                response["stage2_error"] = (
+                    "Parser or assembler failed; see server logs."
+                )
 
-        return assembled
+        return response
 
     except Exception as e:
-        logger.exception("Error during extraction")
+        logger.exception("Error during OCR")
         return {"error": str(e)}
     finally:
         if os.path.exists(pdf_path):

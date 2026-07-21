@@ -58,17 +58,17 @@ class ChandraManager:
         images = load_file(pdf_path, config=config)
         logger.info(f"Loaded {len(images)} page(s) from {pdf_path}")
 
-        batch = [
-            BatchInputItem(image=img, prompt_type="ocr_layout")
-            for img in images
-        ]
-
-        results = self.model.generate(
-            batch,
-            max_output_tokens=max_output_tokens,
-            include_images=False,
-            include_headers_footers=False,
-        )
+        results = []
+        for img in images:
+            batch = [BatchInputItem(image=img, prompt_type="ocr_layout")]
+            page_results = self.model.generate(
+                batch,
+                max_output_tokens=max_output_tokens,
+                include_images=False,
+                include_headers_footers=False,
+            )
+            results.extend(page_results)
+            logger.info(f"  OCR page {len(results)}/{len(images)} done")
 
         pages_md = []
         pages_meta = []
